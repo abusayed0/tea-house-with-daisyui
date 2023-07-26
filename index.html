@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tea House</title>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/6e6041f935.js" crossorigin="anonymous"></script>
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +23,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'text-primary-color': '#1C1C1C',
+                        'text-secondary-color': '#777',
                     }
                 }
             }
@@ -30,12 +34,40 @@
         body {
             font-family: 'Manrope', sans-serif;
         }
+        .badge-shadow{
+           box-shadow:  0px 7px 50px 0px rgba(0, 0, 0, 0.06);
+        }
     </style>
 </head>
 
 <body>
-    <header>
+    <header class="mx-w-[1600px] mx-auto mt-8 md:mt-14 px-4 md:px-16 lg:px-36">
+        <!-- banner start  -->
+        <div class="hero">
+            <div class="hero-content items-stretch flex-col lg:flex-row p-0">
+                <div class="w-full lg:w-1/2">
+                    <h1 class="text-4xl md:text-7xl font-extrabold text-primary-color">It's good tea time at The Tea
+                        House
+                    </h1>
+                    <p class="text-secondary-color my-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction
+                        To Your Taste Buds.</p>
 
+                    <button class="btn bg-[linear-gradient(270deg,#F00_0%,#FF8938_100%)] text-white text-xl">Explore
+                        More</button>
+                </div>
+                <div class="w-full lg:w-1/2 relative">
+                    <img src="images/banner.png" class="w-full h-full object-contain" />
+                    <div class="flex gap-3 items-center badge-shadow p-4 rounded-2xl bg-white w-max absolute bottom-0 left-1/2 -translate-x-1/2">
+                        <i class="text-5xl fa-solid fa-star text-amber-400 "></i>
+                        <div>
+                            <h3 class="font-extrabold text-3xl text-primary-color">5.00</h3>
+                            <p class="font-semibold text-secondary-color">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner end  -->
     </header>
     <main>
 
